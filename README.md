@@ -1,6 +1,4 @@
 # CherryConsole
-This program will help you in creating VK bots
-
 ## Launching the program: 
 ```
 apt-get install python3 python3-pip
