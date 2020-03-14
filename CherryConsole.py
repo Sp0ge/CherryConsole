@@ -77,8 +77,8 @@ if bot == True:
     args["n"] = n
 
     for i in range(n):
-        question = input("q >> ")
-        answer = input("a >> ")
+        question = str(input("q >> "))
+        answer = str(input("a >> "))
         args["q"].append([question, answer])
 
             
