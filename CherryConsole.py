@@ -1,53 +1,47 @@
 ﻿from jinja2 import Template
 from gen_bot import render_bot
 
-print('████████████████████████████████████')
-print('█    ██ ██ ██   ██    ██    ██  █  █')
-print('█ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██')
-print('█ █████    ██   ██    ██    ████ ███')
-print('█ ██ ██ ██ ██ ████ █ ███ █ █████ ███')
-print('█    ██ ██ ██   ██ ██ ██ ██ ████ ███')
-print('████████████████████████████████████')
-print('███████████████████████████████████████')
-print('█    █    ██    ██    █    █ ████    ██')
-print('█ ██ █ ██ ██ ██ ██ ████ ██ █ ████ █████')
-print('█ ████ ██ ██ ██ ██    █ ██ █ ████    ██')
-print('█ ██ █ ██ ██ ██ █████ █ ██ █ ████ █████')
-print('█    █    ██ ██ ██    █    █    █    ██')
-print('███████████████████████████████████████')
 
-print('')
-print('')
-print('')
-
+print("████████████████████████████████████")
+print("█    ██ ██ ██   ██    ██    ██  █  █")
+print("█ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██")
+print("█ █████    ██   ██    ██    ████ ███")
+print("█ ██ ██ ██ ██ ████ █ ███ █ █████ ███")
+print("█    ██ ██ ██   ██ ██ ██ ██ ████ ███")
+print("████████████████████████████████████")
+print("███████████████████████████████████████")
+print("█    █    ██    ██    █    █ ████    ██")
+print("█ ██ █ ██ ██ ██ ██ ████ ██ █ ████ █████")
+print("█ ████ ██ ██ ██ ██    █ ██ █ ████    ██")
+print("█ ██ █ ██ ██ ██ █████ █ ██ █ ████ █████")
+print("█    █    ██ ██ ██    █    █    █    ██")
+print("███████████████████████████████████████")
+print('Powered by Sp0ge and MaBoi fore MGU 2017')
+print(" ")
+print(" ")
+print(" ")
 
 bot = False
 a = 'stop'
 print('print "help" to get command list')
 while bot == False:
     print('')
-    a = input('CherryConsole->')
+    a = input('$CherryConsole$->')
     print('')
 
     if a == 'help':
-        print('sb - start bot_editor')
+        print('bc - start bot editor')
         print('exit - stop program')
 
     if a == 'exit':
         break
-
-
-                    
         
-    if a == 'sb':
-        bot = True
 
+    if a == 'bot editor' or a == 'bc':
+        bot = True
 
 if bot == True:
         
-
-
-
     print("_________")
         
     print (' print bot name')
@@ -57,7 +51,6 @@ if bot == True:
     print('')
     print('')
 
-
     print('your TOKEN - API')
     token = input()
     print('TOKEN >>', token)
@@ -65,12 +58,10 @@ if bot == True:
     print('')
     print('')
 
-
     args = {
         "token": token,
         "q": []
     }
-
 
     n = int(input("number of message >> "))
 
@@ -79,9 +70,7 @@ if bot == True:
     for i in range(n):
         question = str(input("q >> "))
         answer = str(input("a >> "))
-        args["q"].append([question, answer])
-
-            
+        args["q"].append([question, answer])            
 
     print ('================')
     print ('YOUR BOT OPTIONS')
