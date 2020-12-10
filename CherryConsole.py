@@ -50,6 +50,7 @@ while True:
                 n = 0
                 print(' ')
                 print("  ___URL_______________________________ANSWER_______")
+                print('') 
                 while num > n:
                     url = 'https://vk.com/' + urls[n]
                     ans = re.get(url)
@@ -60,11 +61,12 @@ while True:
             
 
         print("  ___BOT_EDIT______________________________________")
+        print('') 
         NAME = input("  bot name >>")
         print('  [',NAME,']')
             
         print('')
-        token = input('  TOKEN-API>>')
+        token = input('  TOKEN-API access key >>')
         print('  [',token,']')
 
         print('')
