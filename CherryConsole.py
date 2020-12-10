@@ -3,37 +3,37 @@ from gen_bot import render_bot
 import time
 import requests as re
 
-print(" ████████████████████████████████████  __.--~~.,-.__     ")
-print(" █    ██ ██ ██   ██    ██    ██  █  █  `~-._.-(`-.__`-.  ")
-print(" █ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██          \    `~~` ")
-print(" █ █████    ██   ██    ██    ████ ███      .--./ \       ")
-print(" █ ██ ██ ██ ██ ████ █ ███ █ █████ ███     /#   \  \.--.  ")
-print(" █    ██ ██ ██   ██ ██ ██ ██ ████ ███     \    /  /#   \ ")
-print(" ████████████████████████████████████      '--'   \    / ")
-print("███████████████████████████████████████            '--'  ")
-print("█    █    ██    ██    █    █ ████    ██")
-print("█ ██ █ ██ ██ ██ ██ ████ ██ █ ████ █████")
-print("█ ████ ██ ██ ██ ██    █ ██ █ ████    ██")
-print("█ ██ █ ██ ██ ██ █████ █ ██ █ ████ █████")
-print("█    █    ██ ██ ██    █    █    █    ██")
-print("███████████████████████████████████████")
-print('Powered by Sp0ge and MaBoi')
-print('https://github.com/Sp0ge/CherryConsole')
+print("  ████████████████████████████████████  __.--~~.,-.__     ")
+print("  █    ██ ██ ██   ██    ██    ██  █  █  `~-._.-(`-.__`-.  ")
+print("  █ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██          \    `~~` ")
+print("  █ █████    ██   ██    ██    ████ ███      .--./ \       ")
+print("  █ ██ ██ ██ ██ ████ █ ███ █ █████ ███     /#   \  \.--.  ")
+print("  █    ██ ██ ██   ██ ██ ██ ██ ████ ███     \    /  /#   \ ")
+print("  ████████████████████████████████████      '--'   \    / ")
+print(" ███████████████████████████████████████            '--'  ")
+print(" █    █    ██    ██    █    █ ████    ██")
+print(" █ ██ █ ██ ██ ██ ██ ████ ██ █ ████ █████")
+print(" █ ████ ██ ██ ██ ██    █ ██ █ ████    ██")
+print(" █ ██ █ ██ ██ ██ █████ █ ██ █ ████ █████")
+print(" █    █    ██ ██ ██    █    █    █    ██")
+print(" ███████████████████████████████████████")
+print(' Powered by Sp0ge and MaBoi')
+print(' https://github.com/Sp0ge/CherryConsole')
 
 time.sleep(1)
 while True:
     menu = False
     a = 'stop'
-    print('print "help" to get command list')
+    print(' print "help" to get command list')
     while menu == False:
         print('')
-        a = input('$CherryConsole$ ->').replace(" ","")
+        a = input(' $CherryConsole$ ->').replace(" ","")
         print('')
 
         if a == 'help':
-            print('bc - start bot editor')
-            print('uc - url check')
-            print('exit - stop program')
+            print(' bc - start bot editor')
+            print(' uc - url check')
+            print(' exit - stop program')
             
 
         if a == 'exit':
@@ -45,16 +45,17 @@ while True:
             menu = True
             
     if a == "uc" or a == "urlcheck":
-                urls = input("vk short urls -> ").replace("#","").replace(",","").split(' ')
+                urls = input("vk short urls -> ").replace("  "," ").replace("#","").replace(",","").split(' ')
                 num = len(urls)
                 n = 0
                 print(' ')
+                print("  ___URL_______________________________ANSWER_______")
                 while num > n:
                     url = 'https://vk.com/' + urls[n]
                     ans = re.get(url)
-                    print(urls[n], " - ", ans)      
+                    print("  ",'{} {}'.format(urls[n].ljust(30, ' '), ans),)
                     n += 1
-                
+                print('') 
     if a == 'bot editor' or a == 'bc':
             
         print("_________")
