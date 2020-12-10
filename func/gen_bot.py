@@ -2,7 +2,7 @@ from jinja2 import Template
 import os
 
 def render_bot(name, args):
-    f1 = open("template_main.py", "r")
+    f1 = open("templates/template_main.py", "r")
 
     s1 = f1.read()
 
