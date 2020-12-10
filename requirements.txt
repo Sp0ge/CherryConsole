@@ -5,3 +5,4 @@ time
 vk_api
 random
 funcs
+requests

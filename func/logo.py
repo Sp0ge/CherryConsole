@@ -29,7 +29,5 @@ def logo():
     print(" ███████████████████████████████████████")
     time.sleep(0.3)
     print(' Powered by Sp0ge and MaBoi')
-    print(' https://github.com/Sp0ge/CherryConsole')
-
-
-    time.sleep(1)
+    print(' https://github.com/Sp0ge/CherryConsole')   
+    time.sleep(0.2)

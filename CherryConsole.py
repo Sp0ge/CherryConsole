@@ -10,7 +10,7 @@ print(' print "help" to get command list')
 while True:
     menu = False
     a = 'stop'
-    while menu == False:
+    while menu == False
         print('')
         a = input(' $CherryConsole$ ->').replace(" ","")
         print('')
