@@ -5,7 +5,7 @@ import requests as re
 
 print("  ████████████████████████████████████  __.--~~.,-.__     ")
 print("  █    ██ ██ ██   ██    ██    ██  █  █  `~-._.-(`-.__`-.  ")
-print("  █ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██          \    `~~` ")
+print("  █ ██ ██ ██ ██ ████ ██ ██ ██ ███   ██           \    `~~` ")
 print("  █ █████    ██   ██    ██    ████ ███      .--./ \       ")
 print("  █ ██ ██ ██ ██ ████ █ ███ █ █████ ███     /#   \  \.--.  ")
 print("  █    ██ ██ ██   ██ ██ ██ ██ ████ ███     \    /  /#   \ ")
@@ -39,7 +39,7 @@ while True:
         if a == 'exit':
             print('Powered by Sp0ge and MaBoiexit in 2017')
             time.sleep(1)
-            break
+            quit()
         
         if a == 'bot editor' or a == 'bc' or a == "uc" or a == "urlcheck":
             menu = True
@@ -58,18 +58,14 @@ while True:
                 print('') 
     if a == 'bot editor' or a == 'bc':
             
-        print("_________")
-            
-        print (' print bot name')
-        NAME = input()
-        print('bot name >>', NAME)
-            
-        print('')
-        print('')
 
-        print('your TOKEN - API')
-        token = input()
-        print('TOKEN >>', token)
+        print("  ___BOT_EDIT______________________________________")
+        NAME = input("  bot name >>")
+        print('  [',NAME,']')
+            
+        print('')
+        token = input('  TOKEN-API>>')
+        print('  [',token,']')
 
         print('')
         print('')
@@ -79,7 +75,7 @@ while True:
             "q": []
         }
         
-        n = int(input("number of message >> "))          
+        n = int(input("  number of message >> "))          
             
         args["n"] = n
 
@@ -87,15 +83,9 @@ while True:
             question = str(input("q >> "))
             answer = str(input("a >> "))
             args["q"].append([question, answer])            
-
-        print ('================')
-        print ('YOUR BOT OPTIONS')
-        print ('================')
-
-        print(args["q"])
         render_bot(NAME, args)
         print("DONE!")
-        
+        print(" ")
         bot = False
         
     
