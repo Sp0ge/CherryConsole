@@ -1,6 +1,8 @@
-<form method="POST">
-    <p><input name="name"></p>
-    <p><input name="token"></p>
-    <p><input name="qnum"></p>
-    <p><input type="submit"></p>
-</form>
+<form method=post>
+    <dl>
+      {{ render_field(form.name) }}
+      {{ render_field(form.token) }}
+      {{ render_field(form.qnum) }}
+    </dl>
+    <p><input type=submit value=Submit>
+  </form>
