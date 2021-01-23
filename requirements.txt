@@ -1,8 +1,5 @@
 jinja2
-gen_bot
-os
-time
 vk_api
-random
-funcs
+flask
+wtforms
 requests

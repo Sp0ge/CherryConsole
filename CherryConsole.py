@@ -10,7 +10,7 @@ print(' print "help" to get command list')
 while True:
     menu = False
     a = 'stop'
-    while menu == False
+    while menu == False:
         print('')
         a = input(' $CherryConsole$ ->').replace(" ","")
         print('')
@@ -22,7 +22,7 @@ while True:
             
 
         if a == 'exit':
-            print('Powered by Sp0ge and MaBoiexit in 2017')
+            print('Powered by Sp0ge and MaBoi')
             time.sleep(1)
             quit()
         
