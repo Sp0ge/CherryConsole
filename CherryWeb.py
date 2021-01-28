@@ -5,15 +5,15 @@ app = Flask(__name__)
 @app.route('/index.html', methods=['post', 'get'])
 def login():
     message = ''
-    if request.method == 'POST':
+    if request.method == 'post':
         url = request.form.get('url')
         n = 0
         rew = ''
         urls = url.replace("  "," ").replace("#","").replace(",","").split(' ')
         num = len(urls)
         while num > n:
-            url = 'https://vk.com/' + urls[n]
-            ans = request.get(url)
+            url1 = 'https://vk.com/' + urls[n]
+            ans = request.get(url1)
             answer = ("  ",'{} {}'.format(urls[n].ljust(30, ' '), ans),)
             rew = rew + ' ' + answer
             n += 1
